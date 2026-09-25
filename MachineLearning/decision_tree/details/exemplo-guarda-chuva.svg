@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">Árvore de decisão: levar guarda-chuva</title>
+  <desc id="desc">A pergunta inicial é se o céu está chuvoso. Se sim, levar guarda-chuva. Se não, verificar se há previsão de chuva; levar guarda-chuva se houver previsão e sair sem guarda-chuva caso contrário.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.line{fill:none;stroke:#94a3b8;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .node{fill:#e0f2fe;stroke:#0284c7;stroke-width:2}.leaf-yes{fill:#dcfce7;stroke:#16a34a;stroke-width:2}.leaf-no{fill:#f1f5f9;stroke:#64748b;stroke-width:2}
+      .label{font:600 18px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#334155}.title{font:700 25px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#0f172a}
+      .text{font:600 20px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#0f172a}.branch{font:700 17px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#475569}
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1000" height="470" rx="22"/>
+  <text class="title" x="40" y="48">Decisão: levar guarda-chuva?</text>
+  <path class="line" d="M500 137 V185 H240 V285 M500 185 H740 V245 M740 315 V355 H620 V390 M740 355 H860 V390"/>
+  <text class="branch" x="285" y="174">Sim</text>
+  <text class="branch" x="690" y="174">Não</text>
+  <text class="branch" x="630" y="347">Sim</text>
+  <text class="branch" x="838" y="347">Não</text>
+  <rect class="node" x="350" y="78" width="300" height="62" rx="18"/>
+  <text class="text" x="500" y="117" text-anchor="middle">O céu está chuvoso?</text>
+  <rect class="leaf-yes" x="100" y="285" width="280" height="68" rx="18"/>
+  <text class="text" x="240" y="327" text-anchor="middle">Levar guarda-chuva</text>
+  <rect class="node" x="590" y="245" width="300" height="70" rx="18"/>
+  <text class="text" x="740" y="275" text-anchor="middle">Há previsão</text>
+  <text class="text" x="740" y="300" text-anchor="middle">de chuva?</text>
+  <rect class="leaf-yes" x="480" y="390" width="280" height="60" rx="18"/>
+  <text class="text" x="620" y="428" text-anchor="middle">Levar guarda-chuva</text>
+  <rect class="leaf-no" x="770" y="390" width="180" height="60" rx="18"/>
+  <text class="text" x="860" y="428" text-anchor="middle">Sair sem</text>
+  <text class="text" x="860" y="450" text-anchor="middle" style="font-size:15px">guarda-chuva</text>
+</svg>

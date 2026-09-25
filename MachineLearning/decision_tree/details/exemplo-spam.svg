@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="470" viewBox="0 0 1000 470" role="img" aria-labelledby="title desc">
+  <title id="title">Árvore de decisão: classificar uma mensagem</title>
+  <desc id="desc">A árvore pergunta se a mensagem contém a palavra prêmio. Se sim, classifica como spam. Se não, pergunta se o remetente é conhecido: se sim, normal; se não, spam.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.line{fill:none;stroke:#94a3b8;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .node{fill:#ede9fe;stroke:#7c3aed;stroke-width:2}.leaf-spam{fill:#fee2e2;stroke:#dc2626;stroke-width:2}.leaf-ok{fill:#dcfce7;stroke:#16a34a;stroke-width:2}
+      .title{font:700 25px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#0f172a}.text{font:600 20px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#0f172a}
+      .branch{font:700 17px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#475569}
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1000" height="470" rx="22"/>
+  <text class="title" x="40" y="48">Exemplo: classificar uma mensagem</text>
+  <path class="line" d="M500 137 V185 H240 V285 M500 185 H740 V245 M740 315 V355 H620 V390 M740 355 H860 V390"/>
+  <text class="branch" x="285" y="174">Sim</text>
+  <text class="branch" x="690" y="174">Não</text>
+  <text class="branch" x="630" y="347">Sim</text>
+  <text class="branch" x="838" y="347">Não</text>
+  <rect class="node" x="330" y="78" width="340" height="62" rx="18"/>
+  <text class="text" x="500" y="117" text-anchor="middle">Contém a palavra “prêmio”?</text>
+  <rect class="leaf-spam" x="120" y="285" width="240" height="68" rx="18"/>
+  <text class="text" x="240" y="327" text-anchor="middle">Classificar como spam</text>
+  <rect class="node" x="590" y="245" width="300" height="70" rx="18"/>
+  <text class="text" x="740" y="275" text-anchor="middle">O remetente</text>
+  <text class="text" x="740" y="300" text-anchor="middle">é conhecido?</text>
+  <rect class="leaf-ok" x="500" y="390" width="240" height="60" rx="18"/>
+  <text class="text" x="620" y="428" text-anchor="middle">Mensagem normal</text>
+  <rect class="leaf-spam" x="770" y="390" width="180" height="60" rx="18"/>
+  <text class="text" x="860" y="428" text-anchor="middle">Classificar</text>
+  <text class="text" x="860" y="450" text-anchor="middle" style="font-size:15px">como spam</text>
+</svg>
