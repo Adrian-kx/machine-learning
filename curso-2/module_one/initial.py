@@ -8,3 +8,5 @@ plt.xlabel('Eixo x')
 plt.ylabel('Eixo y')
 plt.title('Gráfico teste')
 plt.show()
+
+
